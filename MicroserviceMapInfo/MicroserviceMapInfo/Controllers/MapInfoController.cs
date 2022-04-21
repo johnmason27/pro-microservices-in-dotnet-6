@@ -14,7 +14,7 @@ namespace MicroserviceMapInfo.Controllers {
 
         [HttpGet]
         public GoogleDistanceData GetDistance(string originCity, string destinationCity) {
-            return this.googleDistanceApi.GetMapDistanceAsync(originCity, destinationCity);
+            return this.googleDistanceApi.GetMapDistance(originCity, destinationCity);
         }
     }
 }

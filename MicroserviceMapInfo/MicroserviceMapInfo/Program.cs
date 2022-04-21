@@ -1,4 +1,5 @@
 using GoogleMapInfo;
+using MicroserviceMapInfo.Services;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddTransient<GoogleDistanceApi>();
 builder.Services.AddControllers();
+builder.Services.AddGrpc();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
@@ -26,10 +28,17 @@ if (app.Environment.IsDevelopment()) {
     });
 }
 
+app.UseRouting();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseEndpoints(e => {
+    e.MapGrpcService<DistanceInfoService>();
+    e.MapControllers();
+});
 
 app.Run();

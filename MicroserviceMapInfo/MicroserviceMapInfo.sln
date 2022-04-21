@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceMapInfo", "MicroserviceMapInfo\MicroserviceMapInfo.csproj", "{F68A65F8-93F3-466A-9B01-9B055DB4BB0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceMapInfo", "MicroserviceMapInfo\MicroserviceMapInfo.csproj", "{F68A65F8-93F3-466A-9B01-9B055DB4BB0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapInfo", "GoogleMapInfo\GoogleMapInfo.csproj", "{9D5E9235-F88A-470A-A10A-2E4B1991F3DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleMapInfo", "GoogleMapInfo\GoogleMapInfo.csproj", "{9D5E9235-F88A-470A-A10A-2E4B1991F3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroservicegRPCTester", "MicroservicegRPCTester\MicroservicegRPCTester.csproj", "{2B5B8239-7087-44BF-B8A1-B10013E692FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9D5E9235-F88A-470A-A10A-2E4B1991F3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D5E9235-F88A-470A-A10A-2E4B1991F3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D5E9235-F88A-470A-A10A-2E4B1991F3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5B8239-7087-44BF-B8A1-B10013E692FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5B8239-7087-44BF-B8A1-B10013E692FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5B8239-7087-44BF-B8A1-B10013E692FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5B8239-7087-44BF-B8A1-B10013E692FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
